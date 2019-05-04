@@ -82,6 +82,7 @@ export default {
   beforeDestroy: function() {
     this.dispose();
   },
+  
   // result = response.Siri.StopMonitoringDelivery.MonitoredStopVisit;
   methods: {
     initialize: function() {

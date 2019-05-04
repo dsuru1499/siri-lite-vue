@@ -10,6 +10,7 @@ http://siri-demo-siri-demo.7e14.starter-us-west-2.openshiftapps.com/siri-lite-cl
 http://siri-demo-siri-demo.7e14.starter-us-west-2.openshiftapps.com/siri-lite-vue/index.html
 
 ### Siri Lite Cli (version Reactjs)
+http://siri-demo-siri-demo.7e14.starter-us-west-2.openshiftapps.com/siri-lite-react/index.html
 
 ## siri-lite-vue
 
@@ -23,10 +24,10 @@ Build : ng run build
 
 * Les points d’arrêts sont affichés sur un fond cartographique OSM (StopPointsDiscovery).
 * Un clic gauche sur un point d’arrêt permet d'afficher le résultat d'une requête SIRI LITE StopMonitoring.
-* Les vues StopMonitoring et TripUtdate sont actualisées périodiquement.
+* Les vues StopMonitoring est actualisés périodiquement.
 
 ### Principes
-**siri-cli** est une application Vuejs mettant en œuvre Leaflet.  
+**siri-cli-vue** est une application Vuejs mettant en œuvre Leaflet.  
 Les popups Leaflet affiche un formulaire Vuejs.
 
 Ex: StopMonitoring  

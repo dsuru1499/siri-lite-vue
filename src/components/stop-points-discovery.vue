@@ -127,8 +127,6 @@ export default {
     },
 
     update: function(value) {
-      console.log(value);
-
       this.markers.clearLayers();
       this.popups.clearLayers();
       if (value.response) {

@@ -101,9 +101,11 @@ export default {
     },
 
     load: function() {
-      // let url = "http://127.0.0.1:8080/siri-lite/stop-monitoring"
-      let url =
-        "/siri-lite/stop-monitoring" +
+      let url = "";
+      if(process.env.NODE_ENV === "development"){
+        url = "http://127.0.0.1:8080";
+      }
+      url += "/siri-lite/stop-monitoring" +
         "?" +
         T.MONITORING_REF +
         "=" +

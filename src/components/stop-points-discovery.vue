@@ -88,9 +88,11 @@ export default {
             new L.LatLng(bounds.getNorth() + dy, bounds.getEast() + dx)
           );
 
-          // let url = "http://127.0.0.1:8080/siri-lite/stop-points-discovery"
-          let url =
-            "/siri-lite/stop-points-discovery" +
+          let url = "";
+          if(process.env.NODE_ENV === "development"){
+            url = "http://127.0.0.1:8080";
+          }
+          url += "/siri-lite/stop-points-discovery" +
             "?" +
             T.UPPER_LEFT_LONGITUDE +
             "=" +
